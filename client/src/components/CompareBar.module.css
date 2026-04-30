@@ -1,0 +1,11 @@
+.bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; background: var(--bg-elevated); border-top: 1px solid var(--border); box-shadow: 0 -8px 32px rgba(0,0,0,0.4); animation: slideUp 0.25s ease; }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.inner { max-width: 1280px; margin: 0 auto; padding: 10px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.label { display: flex; align-items: center; gap: 7px; color: var(--accent); font-weight: 600; font-size: 0.875rem; white-space: nowrap; }
+.chips { display: flex; gap: 8px; flex: 1; flex-wrap: wrap; }
+.chip { display: flex; align-items: center; gap: 7px; background: var(--bg-card); border: 1px solid var(--border); padding: 5px 12px; border-radius: 20px; font-size: 0.78rem; max-width: 200px; }
+.chipName { color: var(--text-primary); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.empty { border-style: dashed; color: var(--text-muted); }
+.chipX { background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 1px; display: flex; align-items: center; flex-shrink: 0; }
+.chipX:hover { color: var(--red); }
+.btns { display: flex; gap: 8px; flex-shrink: 0; }
